@@ -39,3 +39,5 @@ The largest population value is 1,318,683,096, which occured in China in 2007.
 `iceland_pop_2007 = data[(data['country']=='Iceland') & (data['year'] == data['year'].max())]`
 
 In 1952, the European country with the smallest population was Iceland. In 2007, Iceland had a population of 301,931.
+
+[Exercise 1 Jupyter Notebook](Exercise1.ipynb)
