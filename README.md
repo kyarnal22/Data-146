@@ -2,7 +2,7 @@
 
 ## Exercises
 
-- [Exercise 1](Exercise1.md)
+- [Exercise 1](Exercise1/Exercise1.md)
 
 
 
