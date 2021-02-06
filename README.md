@@ -2,7 +2,7 @@
 
 ## Exercises
 
-- [Exercise 1](https://github.com/kayarnal/Data-146/blob/main/Exercise1.ipynb)
+- [Exercise 1](Exercise1.md)
 
 
 
