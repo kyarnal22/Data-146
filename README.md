@@ -2,10 +2,10 @@
 
 ## Exercises
 
-- [Exercise 1](Exercise1/Exercise1.md)
+- [Exercise 1](https://kayarnal.github.io/Data-146/Exercise1/Exercise1.html)
 
 ## Projects
-[Project 1[(...)
+[Project 1[(https://kayarnal.github.io/Data-146/Project1/Project1.html)
 
 
 
