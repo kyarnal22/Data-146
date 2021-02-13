@@ -19,15 +19,15 @@ This would import the datetime function from the datetime library. This is helpf
 
 A data frame is a pandas structure that allows for the reading of data sets by organizing data entries into a table of columns and values. 
 When working with dataframes, the pandas library is particularly helpful as it allows for the reading of the data in addition to data subsetting and manipulation.
-To read a file in its remote location in your file system, you would need to write a read_() command, specifying the library you are using and the path to the file. The pandas library has already been imported under an alias, so the code used would look something like this:
+To read a file in its remote location in your file system, you would need to write a `read_()` command, specifying the library you are using and the path to the file. The pandas library has already been imported under an alias, so the code used would look something like this:
 
 `path_to_data = 'gapminder.tsv'`
 `data = pd.read_csv(path_to_data, sep = '\t')`
 
-The dataset we're working this is tab-separated; however the pandas library will assume it is a comma-separated file. To get around this, within the read() command, specify that you want data read as a csv file, read_csv(), while
-including that the data is tab-separated, sep = '\t'. 
+The dataset we're working this is tab-separated; however the pandas library will assume it is a comma-separated file. To get around this, within the `read()` command, specify that you want data read as a csv file, `read_csv()`, while
+including that the data is tab-separated, `sep = '\t'`. 
 
-To return a description of the data, use the describe() command:
+To return a description of the data, use the `describe()` command:
 
 `data.describe()`
 
@@ -35,7 +35,7 @@ To determine how many rows and columns are included in the dataset, use the .sha
 
 `data.shape()`
 
-To get a summary of the names of the columns, use data.info(), or data.columns() as a list:
+To get a summary of the names of the columns, use `data.info()`, or `data.columns()` as a list:
 
 `data.info()`
 `list(data.columns)`
