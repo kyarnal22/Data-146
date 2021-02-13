@@ -1,1 +1,41 @@
 # Project 1
+
+## 1 
+
+A package is a group of Python modules that, when imported into your Python workspace allow for the use of various commands that would otherwise require more effort to complete. 
+Within each package are a series of libraries that each have a specific function relating to the main package.
+To install a package and then a library, you must first make sure the package is installed within the Python interpreter - found under Preferences in PyCharm. If it is not installed, a package can be easily found by typing in its name and adding it to the interpreter.
+Once the package is installed, you then have to import it into the workspace with a line of code. 
+
+'import pandas as pd' 
+
+This would import the pandas library into your workspace under an alias 'pd'. Using an alias can be helpful in keeping code short and easy to read.
+
+'import datetime from datetime'
+
+This would import the datetime function from the datetime library. This is helpful when you only need access to a certain function from within a library; rather than importing the entire library, you can import certain functions specifically. 
+
+## 2
+
+A data frame is a portion of data extracted from the larger data set. The gapminder data features data for every country in the world, a dataframe of that dataset could pick out just the African countries. 
+When working with dataframes, the pandas library is particularly helpful as it allows for the reading of the data in addition to data subsetting and manipulation.
+To read a file in its remote location in your file system, you would need to write a read_() command, specifying the library you are using and the path to the file. The pandas library has already been imported under an alias, so the code used would look something like this:
+
+'path_to_data = 'gapminder.tsv''
+'data = pd.read_csv(path_to_data, sep = '\t')'
+
+The dataset we're working this is tab-separated; however the pandas library will assume it is a comma-separated file. To get around this, within the read() command, specify that you want data read as a csv file, read_csv(), while
+including that the data is tab-separated, sep = '\t'. 
+
+To return a description of the data, use the describe() command:
+
+`data.describe()`
+
+To determine how many rows and columns are included in the dataset, use the .shape() command.
+
+`data.shape()`
+
+To get a summary of the names of the columns, use data.info(), or data.columns() as a list:
+
+`data.info()`
+`list(data.columns)`
