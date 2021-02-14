@@ -71,7 +71,7 @@ The '&' symbol is used to represent 'and' and would be used in cases where you a
 
 `data_europe2007 = data[(data['continent']=='Europe') & (data['year'] == data['year'].max())]`
 
-The | symbol is used to represent 'or' and would return True as long as at least one of the given arguments is True. The following code will return True even though 3 is not greater than 4, because it is only asking if one of the given arguements is correct.
+The `|` symbol is used to represent 'or' and would return True as long as at least one of the given arguments is True. The following code will return True even though 3 is not greater than 4, because it is only asking if one of the given arguements is correct.
 
 `(1+2 == 3) | (3 > 4)`
 
