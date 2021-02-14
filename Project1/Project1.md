@@ -139,5 +139,5 @@ Instead of using .iloc to filter columns, you could just make a new subset of yo
 `data[["country", "continent", "year", "lifeExp"]]`
 `data.iloc[:, 0:4]`
 
-[Project 1 Jupyter Notebook]()
-[Project 1 File]()
+[Project 1 Jupyter Notebook](Project1.ipynb)
+[Project 1 File](Project1.py)
