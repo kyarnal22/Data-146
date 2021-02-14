@@ -116,6 +116,7 @@ After setting a filename for your data, you can retrieve the data from the reque
 `import pytz`
  
 `file_name_short = 'ctp_' + str(dt.now(tz = pytz.utc)).replace(' ', '_') + '.csv'`
+
 `file_name = os.path.join(data_folder, file_name_short)`
 
 `r = requests.get(url)`
