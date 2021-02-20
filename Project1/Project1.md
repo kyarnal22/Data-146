@@ -17,6 +17,7 @@ This would import the datetime function from the datetime library. This is helpf
 A data frame is a structure that allows for the reading of data sets by organizing data entries into a table of columns and values. When working with dataframes, the pandas library is particularly helpful as it allows for the reading of the data in addition to data subsetting and manipulation. To read a file in its remote location in your file system, you would need to write a `read_()` command, specifying the library you are using and the path to the file. The pandas library has already been imported under an alias, so the code used would look something like this:
 
 `path_to_data = 'gapminder.tsv'`
+
 `data = pd.read_csv(path_to_data, sep = '\t')`
 
 The dataset we're working this is tab-separated; however the pandas library will assume it is a comma-separated file. To get around this, within the `read_()` command, specify that you want data read as a csv file, `read_csv()`, while including that the data originally was tab-separated, `sep = '\t'`. 
@@ -28,11 +29,13 @@ To return a description of the data, use the `describe()` command:
 To determine how many rows and columns are included in the dataset, use the .shape() command.
 
 `data.shape[0]`
+
 `data.shape[1]`
 
 There are 1704 rows and 6 columns in this dataframe. To get a summary of the names of the columns, use `data.info()`, or `data.columns()` as a list:
 
 `data.info()`
+
 `list(data.columns)`
 
 ## 3 
@@ -113,6 +116,7 @@ if not os.path.exists(data_folder):
 After setting a filename for your data, you can retrieve the data from the request and populate your new file.
  
 `from datetime import datetime as dt`
+
 `import pytz`
  
 `file_name_short = 'ctp_' + str(dt.now(tz = pytz.utc)).replace(' ', '_') + '.csv'`
@@ -124,9 +128,10 @@ After setting a filename for your data, you can retrieve the data from the reque
 `with open(file_name, 'wb') as f:
     f.write(r.content)`
     
- Once your file is written, you cna import it into your workspace using pandas.
+ Once your file is written, you can import it into your workspace using pandas.
     
 `import pandas as pd`
+
 `df = pd.read_csv(file_name)`
 
 ## 9 
@@ -138,6 +143,7 @@ The apply() function from the pandas library allows for the user to take any fun
 Instead of using .iloc to filter columns, you could just make a new subset of your data frame. The following two lines of code return the same output; however, using the first option is potentially easier and allows both consecutive and non-consecutive columns to be extracted by name. 
 
 `data[["country", "continent", "year", "lifeExp"]]`
+
 `data.iloc[:, 0:4]`
 
 [Project 1 Jupyter Notebook](Project1.ipynb)
