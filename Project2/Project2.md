@@ -21,11 +21,12 @@ The first column is an example of ordinal data, where numerical values are used 
 
 ## 2 
 
-### X1
+### X1 - Normally Distributed 
 
 ![X1 Plot](X1plot.png)
 
 Mean: .4957
+
 Median: .4965
 
 ### X2 - Right Skewed
@@ -33,6 +34,7 @@ Median: .4965
 ![X2 Plot - Right Skewed](X2plot.png)
 
 Mean: .1225
+
 Median: .0757
 
 ### X3 - Left Skewed
@@ -40,6 +42,7 @@ Median: .0757
 ![X3 Plot - Left Skewed](X3plot.png)
 
 Mean: .8805
+
 Median: .9199
 
 ## 3
