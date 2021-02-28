@@ -59,3 +59,13 @@ The plot shown after applying the logarithmic transformation to the raw data bes
 
 ## 4 
 Using the seaborn library of functions, produce a box and whiskers plot of population for all countries at the given 5-year intervals. Also apply a logarithmic transformation to this data and produce a second plot. Which of the two resulting box and whiskers plots best communicates the change in population amongst all of these countries from 1952 to 2007?
+
+### Raw Data
+
+![Raw Data Graph](pop.png)
+
+### Logarithmic Transformation
+
+![Logarithmic Transformation](logPop.png)
+
+The second graph of the logarithmic transformation of the population variable clearly best communicates the change in population amongst all countries from 1952 to 2007. While the graph of the raw data is very concentrated and difficult to read, the second graph is much more spread out  and shows the gradual increase in average population over the years.
