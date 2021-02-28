@@ -58,7 +58,6 @@ Median: .9199
 The plot shown after applying the logarithmic transformation to the raw data best communicates the change in life expectancy among all included countries from 1952 to 2007. It is much easier to see the difference between the two years in the second plot than in the first, as the second one more clearly demonstrates the dramatic increase in life expectancy worldwide from 1952 to 2007.
 
 ## 4 
-Using the seaborn library of functions, produce a box and whiskers plot of population for all countries at the given 5-year intervals. Also apply a logarithmic transformation to this data and produce a second plot. Which of the two resulting box and whiskers plots best communicates the change in population amongst all of these countries from 1952 to 2007?
 
 ### Raw Data
 
@@ -69,3 +68,5 @@ Using the seaborn library of functions, produce a box and whiskers plot of popul
 ![Logarithmic Transformation](logPop.png)
 
 The second graph of the logarithmic transformation of the population variable clearly best communicates the change in population amongst all countries from 1952 to 2007. While the graph of the raw data is very concentrated and difficult to read, the second graph is much more spread out  and shows the gradual increase in average population over the years.
+
+
