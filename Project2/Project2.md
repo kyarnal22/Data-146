@@ -16,7 +16,7 @@ To use all three kinds of data in practice, you could use a model of countries, 
 | 3   | Singapore       | 65,233.28 |
 | 7    | Norway       | 75,419.63 |
 
-The first column is an example of ordinal data, where numerical values are used in a ranking rather than as a numerical count. The second column is categorical data as it includes the label of country names. The last column includes continuous data, as GDP is a quantitative value that can take on a range. In this model, the three columns would be classified as features, with the hypothetical correlation between CPI ranking and GDP per capita being the dependent, target value. 
+The first column is an example of ordinal data, where numerical values are used in a ranking rather than as a numerical count. The second column is categorical data as it includes the label of country names. The last column includes continuous data, as GDP is a quantitative value that can take on a range. In this model, the first column would be classified as a feature, with each country's GDP per capita hypothetically being the dependent, target value - should there be a correlation between CPI ranking and GDP.
 
 
 ## 2 
@@ -55,7 +55,7 @@ Median: .9199
 
 ![Logarithmic Transformation](loglifeExp.png)
 
-The plot shown after applying the logarithmic transformation to the raw data best communicates the change in life expectancy among all included countries from 1952 to 2007. It is much easier to see the difference between the two years in the second plot than in the first, as the second one more clearly demonstrates the dramatic increase in life expectancy worldwide from 1952 to 2007.
+The plot shown after applying the logarithmic transformation to the raw data best communicates the change in life expectancy among all included countries from 1952 to 2007. It is much easier to see the difference between the two years in the second plot than in the first, as the second one more clearly demonstrates the dramatic increase in life expectancy worldwide from 1952 to 2007. Scaling down the values while preserving the variation of the variables through the logarithmic transformation allows for the second plot to be more readable. 
 
 ## 4 
 
@@ -67,6 +67,6 @@ The plot shown after applying the logarithmic transformation to the raw data bes
 
 ![Logarithmic Transformation](logPop.png)
 
-The second graph of the logarithmic transformation of the population variable clearly best communicates the change in population amongst all countries from 1952 to 2007. While the graph of the raw data is very concentrated and difficult to read, the second graph is much more spread out  and shows the gradual increase in average population over the years.
+The second graph of the logarithmic transformation of the population variable clearly best communicates the change in population amongst all countries from 1952 to 2007. While the graph of the raw data is very concentrated and difficult to read, the second graph is much more spread out  and shows the gradual increase in average population over the years. The values are too large in the first, raw data set, making the plots very concentrated around smaller values while including distinct outliers. Scaling the data down allows for a clearer plot that easily demonstrates how population changed over the given years. 
 
 
